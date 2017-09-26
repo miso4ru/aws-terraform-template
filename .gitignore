@@ -1,0 +1,8 @@
+trash
+terraform.tfvers
+.terraform.d
+crash.log
+.terraform
+*.tf_
+*.tfstate
+*.tfstate.backup

@@ -57,11 +57,11 @@
 /23割り * AZ (1AZ 507台)  
 1AZに500台以上作成する可能性がある場合、maskを広げて設計する。
 
-| name      | masks | use                                                      |
-| :---      | :---- | :------------------------------------------------------  |
-| public-*    | /23   | PublicIPを付与するEC2用                                 |
-| private-*   | /23   | PrivateなEC2に利用 NAT-Gatwayを経由してOutBound通信可能 |
-| protected-* | /23   | 外部通信不要なEC2, RDS, ElastiCache等に利用             |
+| name        | masks | use                                                      |
+| :---        | :---- | :------------------------------------------------------  |
+| public-*    | /23   | PublicIPを付与するEC2用                                  |
+| protected-* | /23   | 主に直接通信不要のEC2に利用 NAT-Gatwayを経由してOutBound通信可 |
+| private-*   | /23   | 外部通信不要なEC2, RDS, ElastiCache等に利用              |
 
 ### 特殊サブネット
 /25割り * AZ (1AZ 123台まで)  
